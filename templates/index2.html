@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection with YOLOv4</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+       var socket = io.connect('http://' + document.domain + ':' + location.port);
+        let lastSpeakTime = 0;
+        function myFunction() {
+            console.log("Sending request to fetch text...");
+            fetch('/call_example_function')
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data);  // Display the response from the Flask function
+
+                    const currentTime = Date.now();
+                    if (currentTime - lastSpeakTime >= 6000) {
+                          
+                        lastSpeakTime = currentTime;  // Update the last speak time
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+
+            function speakText(text) {
+                const synth = window.speechSynthesis;
+                const utterance = new SpeechSynthesisUtterance(text);
+                synth.speak(utterance);
+            }
+
+            console.log("Text Fetched Successfully...");
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Object Detection with YOLOv4 HI</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480" />
+</body>
+</html>

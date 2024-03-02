@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text Effect</title>
+    <style>
+        /* Define keyframes for the animation */
+        @keyframes glow {
+            0% {
+                color: #ff0000; /* Start with red color */
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Initial shadow */
+            }
+            50% {
+                color: #00ff00; /* Change to green color */
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; /* Midway shadow */
+            }
+            100% {
+                color: #0000ff; /* Change to blue color */
+                text-shadow: 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff; /* Final shadow */
+            }
+        }
+
+        /* Apply the animation to the text */
+        #glowingText {
+            font-family: monospace;
+            font-size: 20px;
+            animation: glow 2s infinite; /* Repeat the animation indefinitely */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Text with glowing effect -->
+<div id="glowingText">Glowing Text</div>
+
+</body>
+</html>

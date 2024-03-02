@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAECE9;
+}
+
+/* Imported Starts */
+
+*{
+    /* background-color: #FAECE9 ; */
+    background-color: #FFD978  ;
+    /* color: white; */
+}
+
+nav div .container{
+    border-radius: 20px;
+}
+div{
+    padding: 4px;
+    border-radius: 40px;
+}
+
+nav div a {
+    padding: 4px;
+    color: #444444 !important;
+}
+.navbar-toggler span{
+    color: rgb(179, 176, 176);
+}
+
+.about-text, 
+.animated-text, 
+.animated-text 
+#navbarNav,
+span, p,  a, ul, ol, li, 
+div, img, small,
+ h1, h2, h3, h4, h5, h6,
+ .accordian-item, 
+ .accordian-body, 
+ address, time
+ {
+    /* background-color: #FFA68C !important; */
+    /* background-color: #FFD978 !important; */
+    background-color: #FFF8D3 !important;
+
+}
+nav .navbar-brand{
+    margin-left: 16px;
+    font-size: 26px;
+}
+nav a :hover{
+    color: #e59d01;
+}
+
+h1, h2{
+    color: #444444 !important;
+}
+
+.about-image{
+    margin: 30px;
+}
+.largerName{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.about-text a {
+    background-color: #454343 !important;
+    color: white;
+    font-size: 20px;
+    padding: 8px 22px;
+    margin: 2px;
+    margin-right: 15px;
+    border-radius: 22px;
+}
+
+/* .about-text a :hover{
+    color: #bf8a05 !important;
+    transform: scale(1.2) !important;
+    transition: transform 0.2s !important;
+} */
+
+.about-text p {
+    background-color: #0f0f0f;
+    color: #bf8a05 ;
+    
+}
+.about-text .button-main, .btn{
+    border-radius: .55rem;
+    background-color: #444444;
+    color: #FFF8D3 !important;
+}
+.btn :hover{
+    background-color: #878080 !important;
+    color: #FFF8D3 !important;
+}
+
+.text-output{
+    margin: 40% 5% 0 5%;
+}
+
+/* Imported Ends */
+
+/* Section Starts*/ 
+
+section div{
+    margin-top: 10px;
+}
+
+ /* Define keyframes for the animation */
+ @keyframes glow {
+    0% {
+        color: #000000; /* Start with red color */
+        text-shadow: 0 0 10px #ffae00, 0 0 20px #ffae00, 0 0 30px #ffae00; /*Initial shadow */
+    }
+    34% {
+        color: #000000; /* Change to green color */
+        text-shadow: 0 0 20px #d9a637, 0 0 30px #d9a637, 0 0 40px #d9a637; /* Midway shadow */
+    }
+    66% {
+        color: #000000; /* Change to blue color */
+        text-shadow: 0 0 30px #edc257, 0 0 40px #edc257, 0 0 50px #edc257; /* Final shadow */
+    }
+    100% {
+        color: #000000; /* Change to green color */
+        text-shadow: 0 0 20px #d9a637, 0 0 30px #d9a637, 0 0 40px #d9a637; /* Midway shadow */
+    }
+}
+
+/* Apply the animation to the text */
+#glowingText {
+    font-family: monospace;
+    font-size: 40px;
+    animation: glow 1s infinite; /* Repeat the animation indefinitely */
+}
+
+
+
+/* Section Ends*/
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+    padding: 10px 30px;
+    /* margin-bottom: 60px; */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#headname{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 50vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+footer {
+
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
